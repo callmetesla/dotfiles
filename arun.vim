@@ -16,6 +16,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'tmhedberg/SimpylFold'
+Plugin 'SirVer/ultisnips'
+Plugin 'christoomey/vim-tmux-navigator'
 call vundle#end()          
 filetype plugin indent on
 let mapleader = "\<Space>"
@@ -69,3 +71,11 @@ let g:ale_set_highlights = 0
 autocmd FileType python setlocal completeopt-=preview
 set background=dark
 set t_Co=256
+nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <C-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <C-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
+let g:tmux_navigator_no_mappings = 1
+let g:tmux_navigator_save_on_switch = 1
+set hlsearch
+nnoremap <silent> <leader>, :noh<cr>
