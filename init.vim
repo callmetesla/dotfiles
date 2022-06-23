@@ -10,7 +10,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Townk/vim-autoclose'
 Plug 'elzr/vim-json'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -25,7 +25,7 @@ let mapleader = "\<Space>"
 syntax on
 set rnu
 syntax enable
-colorscheme dracula
+colorscheme gruvbox
 filetype on
 set number
 set autoindent
